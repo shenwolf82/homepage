@@ -1,0 +1,77 @@
+
+/* shared classes */
+p{
+  text-indent: 30px;
+}
+body{
+  background-color: black;
+  color: white;
+}
+
+/* Classes for index page */
+.topsection{
+
+background-image: url("../images/ocean.jpg");
+background-repeat: no-repeat;
+background-size:100% 600px;
+background-position: left top;
+
+}
+.photo{
+opacity: 0.15;
+border-radius: 100%;
+position: relative;
+height: 300px;
+margin: 0;
+top: 0;
+float: left;
+
+}
+.phototext{
+  clear: left;
+  position: relative;
+
+margin-left: 50%;
+
+}
+/* Classes for contactme */
+.container{
+  position: relative;
+}
+.container1{
+  position: relative;
+}
+.container2{
+  position: absolute;
+  width: 100%;
+  bottom: 450px;
+}
+.comment{
+  position: absolute;
+  top: 124px;
+}
+.commentfield{
+  position: absolute;
+  left: 78px;
+  top: 2px;
+}
+.sendbutton{
+  position: absolute;
+  left: 240px;
+  top: 249px;
+}
+
+.namefield{
+  position: absolute;
+  left: 78px;
+  bottom: 25px;
+}
+.emailfield{
+  position: absolute;
+  left: 78px;
+  bottom: 1px;
+}
+.labelname{
+  position: absolute;
+  bottom:28px;
+}

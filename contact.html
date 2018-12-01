@@ -3,12 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <style>
-    p {
-        /* take this out when css is brought in for better indenting */
-        text-indent: 30px;
-      }
-    </style>
+  <link rel="stylesheet" href="css/styles.css">
+
   <title>Contact Me</title>
 </head>
 
@@ -19,22 +15,35 @@
   <p>For proper submission of form, please use chrome or firefox. Edge brwosers will
     not include the contents of the form with the current coding.</p>
   <br>
+  <div class="container">
   <hr size="3px" noshade>
   <br>
-  <form class="" action="mailto:shenwolf82@gmail.com?subject=Website Comment" method="post" enctype="text/plain">
-    </p><label for="name">Name: </label>
-    <input type="text" name="name" placeholder="Type your first name">
-    <br>
-    <label for="email">Email: </label>
-    <input type="email" name="email" placeholder="Type your email here">
-    <br>
-    <label for="comment">Comments: </label>
-    <textarea name="comment" rows="15" cols="50" placeholder="Type your comments for me. This text will disappear when you start typing."></textarea>
-    <br>
-    <br>
-    <input type="submit" name="" value="Send Email">
-  </form>
-  <br>
+
+    <form class="" action="mailto:shenwolf82@gmail.com?subject=Website Comment" method="post" enctype="text/plain">
+
+    </p><label class="labelname" for="name">Name: </label>
+      <div class="namefield">
+        <input type="text" name="name" placeholder="Type your first name">
+      </div class="namefield">
+      <br>
+      <label class="labelemail" for="email">Email: </label>
+      <div class="emailfield">
+        <input type="email" name="email" placeholder="Type your email here">
+      </div class="emailfield">
+      <br>
+    </div class="container">
+      <div class="container1">
+      <label class="comment" for="comment">Comments: </label>
+      <textarea class="commentfield" name="comment" rows="15" cols="50" placeholder="Type your comments for me. This text will disappear when you start typing."></textarea>
+      <br>
+      <br>
+      <div class="sendbutton">
+        <input type="submit" name="" value="Send Email">
+      </div class="sendbutton">
+  </div class="container1>" </form> <br>
+  <div class="container2">
+
+
   <hr size="3px" noshade>
   <br>
   <a href="index.html">Return to Homepage</a>
@@ -42,6 +51,7 @@
   <br>
   <br>
   <a href="aboutme.html">Learn About Me</a>
+</div class="container2">
 </body>
 
 </html>
