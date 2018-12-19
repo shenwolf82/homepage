@@ -4,28 +4,37 @@
 <head>
   <meta charset="utf-8">
   <title>Jay's Webpage</title>
+
   <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Charmonman:700|Source+Sans+Pro" rel="stylesheet">
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
   <!-- Bootstrap java -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
   <!-- Personal stylesheet -->
-  <link rel="stylesheet" href="./css/styles.css">
+  <link id="styling" rel="stylesheet" href="./css/styles.css">
+
 </head>
 
 <body>
   <!-- Navigation Bar -->
 
-  <nav class="navbar navbar-expand-lg navbar-right flex-row-reverse navbar-light bg-dark">
-    <a class="navlinks" href="contact.html">Contact Me</a>
-    <a class="navlinks" href="https://www.youtube.com/channel/UCr2JtS63jBjADwiLPipNVag">My Youtube Channel</a>
-    <a class="navlinks" href="aboutme.html">Learn About Me</a>
+  <nav class="navbar navbar-expand-lg navbar-right flex-row-reverse navbar-light bg-dark fixed-top">
+
+    <button type="button" name="style1" onclick="styleChange()">Background Images</button>
+
+    <a class="navlinks" href="https://www.youtube.com/channel/UCr2JtS63jBjADwiLPipNVag"><strong>My Youtube Channel</strong></a>
+    <a class="navlinks" href="contact.html"><strong>Contact Me</strong></a>
+    <a class="navlinks" href="aboutme.html"><strong>Learn About Me</strong></a>
   </nav>
+
   <!-- Top Section -->
-  <div class="topsection">
+  <div class="topsection hideThis">
     <img class="photo" src="images/me2.png" alt="Picture of James"></td>
     <div class="phototext">
       <h1 class="head">Jay</h1>
@@ -34,19 +43,27 @@
     </div class="head">
   </div class="topsection">
 
+
+
   <!-- Education Section -->
+
+
+
+
+  <div id="education">
+
   <div class="section-title">
     <h2>Education</h2>
-  </div class="section-title">
+  </div>
   <br>
-  <div class="tables">
+  <div class="tables" id="education-table">
     <div class="row education">
       <div class="col-md-4">
-        <h3>Brief Summary:</h3>
+        <h3 class="tablefield">Brief Summary:</h3>
         <p>My education spans from different colleges and different programs. I originally studied as a computer programmer, then network engineering, a double focus on cyber security
           and programming, before finally focusing solely on programming. I now persue web design and mobile app development.</p>
       </div class="col-md-4">
-      <div class="col-md-4">
+      <div class="col-md-4 tablefield">
 
         <h3>Schools Attended:</h3>
 
@@ -57,7 +74,7 @@
         <br>
       </div class="col-md-4">
       <div class="col-md-4">
-        <h3>Programming Skills:</h3>
+        <h3 class="tablefield">Programming Skills:</h3>
         <div class="row">
           <div class="col-md-6 col-sm-12">
             C++
@@ -75,28 +92,26 @@
       </div class="col-md-4">
     </div class="row">
   </div class="tables">
+</div id="education">
   <!-- Work History Section -->
 
-<div class="section-title">
-  <h2>Recent Job History</h2>
-</div class="section-title">
+  <div class="section-title">
+    <h2>Recent Job History</h2>
+  </div class="section-title">
   <div class="tables">
-    <div class="row education">
-      <div class="col-md-4 col-sm-12 align-self-center">
+    <div class="row ">
+      <div class="col-md-4 col-sm-12 align-self-center tablefield">
         <h4>Table Games Dealer</h4>
-      </div>
-      <div class="col-md-4 col-sm-12 align-self-center">
-
+      </div class="col">
+      <div class="col-md-4 col-sm-12 align-self-center tablefield">
         FireKeepers
         <br>2017 - Present
         <br>
         <br>
         Lady Luck Casino
-        <br>2014 - 2017
+        <br>2015 - 2017
       </div class="col">
       <div class="col-md-4 col-sm-12">
-
-        <p>Being a dealer can be a fun job, but also a demanding job.</p>
         <p>A dealer is responsible for ensuring that all their guests are compliant with the house rules, from their bets to their demeanor. If a guest becomes too disruptive and begins
           to upset the other patrons, they must be warned and the situation diffused by the dealer or, if not possible, supervisors must get involed. Patrons must be monitored by the dealer
           as well for their level of intoxication. If they become to drunk, the supervisor must be informed so alcohol for that patron can be cut off.</p>
@@ -105,38 +120,55 @@
           quick to anger or getting easily offended will worsen these situations.</p>
         <p>A dealer is also responsible for game protection, making sure that the house money is guarded at all times. At any given time, a dealer has thousands or more in front of them
           and must ensure that no patron is able to grab the chips in the rack.</p>
-
       </div class="col">
     </div class="row">
   </div class="tables">
-<!--
   <br>
-  <h3>Recent Work History: </h3>
-  <table cellspacing="10px">
-    <thead>
-      <th>Years</th>
-      <th>Company</th>
-      <th>Position</th>
-    </thead>
-    <tbody>
-      <tr>
-        <td>2017 - Present</td>
-        <td>FireKeepers Casino</td>
-        <td>Table Games Dealer</td>
-      </tr>
-      <tr>
-        <td>2014 - 2017</td>
-        <td>Lady Luck Casino</td>
-        <td>Table Games Dealer</td>
-      </tr>
-      <tr>
-        <td>2012 - 2014</td>
-        <td>TeleTech</td>
-        <td>Customer Service Rep</td>
-      </tr>
-    </tbody>
-  </table> -->
+  <br>
 
+  <div class="tables">
+    <div class="row">
+      <div class="col-md-4 col-sm-12 align-self-center tablefield">
+        <h4>Customer Service Rep</h4>
+      </div class="col">
+      <div class="col-md-4 col-sm-12 align-self-center tablefield">
+        TeleTech
+        <br>2013-2015
+      </div class="col">
+      <div class="col-md-4 col-sm-12">
+        <p>The job of a customer service rep handling credit cards typically consists of opening, closing, and assisting customers with balancing their statements. A csr would handle
+          payments to the credit card as well, and transfer the customer to other departments as needed, such as the fraud department. A csr with this company could field close or over a hundred
+          calls a day during the busy times, and far less when not so busy.</p>
+      </div class="col">
+    </div class="row">
+  </div class="tables">
+
+  <!-- filler text -->
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+  <!-- Personal javascript and JQuery file -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./javascript/index.js"></script>
 </body>
 
 </html>
