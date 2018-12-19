@@ -10,6 +10,18 @@ body {
   line-height: 25px;
 }
 
+/* This makes button appear as plain text */
+button{
+  border: none;
+  background-color: inherit;
+  color: inherit;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+/* This disables button border when button is clicked */
+button:focus{
+  outline: none;
+}
+
 .navlinks {
   padding-right: 25px;
 }
@@ -46,15 +58,14 @@ body {
   top: 150px;
 }
 
-.education-background {
+/* .education-background {
   background-image: url("../images/devry.png");
   color: black;
-}
+} */
 
 .section-title {
   text-align: center;
   margin-top: 25px;
-  position: relative;
   z-index: -1;
 }
 

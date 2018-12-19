@@ -3,23 +3,29 @@ function styleChange(){
   document.getElementById("education-table").classList.toggle("education-background");
 }
 $(".topsection").fadeIn(2000, "linear");
-$(document).on("scroll", function() {
-  if($(document).scrollTop() > 10){
-    $(".topsection").animate({opacity: 0.3});
-  }
-  else if($(document).scrollTop() === 1){
-    $(".topsection").animate({opacity: 1.0});
-  }
+
+// var educationDown = 139;
+// var educationUp = 140;
+
+// calls fading function to make sections slide up and down, requires function to be called in anonymous function to work with scrolling
+// $(document).on("scroll",function(){
+//   sliding("#education", educationDown, educationUp);
+// });
+//
+// function sliding(slideId, downValue, upValue)
+// {
+//   //if statements check distance scrolled from top vs variable values to trigger slides
+// if($(document).scrollTop() < downValue){
+//   $(slideId).slideDown();
+// }
+// else if($(document).scrollTop() > upValue){
+//   $(slideId).slideUp();
+// }}
+$("#education-button").on("click", function(){
+  console.log("Clicked!");
+  $("#education").slideToggle();
 });
-
-// $("#education").delay(2100).slideDown(900, "linear");
-
-// $("#education").hide();
-$(document).on("scroll", function(){
-if($(document).scrollTop() < 10){
-  $("#education").slideDown();
-}
-else if($(document).scrollTop() > 11){
-  $("#education").slideUp();
-}
+$("#work-button").on("click", function(){
+  console.log("Clicked!");
+  $("#work").slideToggle();
 });
