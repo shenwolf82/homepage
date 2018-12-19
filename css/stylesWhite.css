@@ -15,11 +15,10 @@ body {
 }
 
 /* Classes for index page */
-.hideThis{
-  display: none;
-}
 .topsection {
   background-image: url("../images/ocean.jpg");
+  background-color: black;
+  background-repeat: no-repeat;
   background-size: 100% 600px;
   position: sticky;
   top: 1px;
@@ -45,19 +44,17 @@ body {
   position: absolute;
   top: 150px;
 }
+/* Education section */
 
-.education-background {
-  background-image: url("../images/devry.png");
-  color: black;
+.education-container{
+  background-image: url(./images/devry.png);
 }
-
-.section-title {
+.section-title{
   text-align: center;
   margin-top: 25px;
   position: relative;
   z-index: -1;
 }
-
 .tables {
   padding: 15px 25px;
   position: relative;
@@ -69,7 +66,6 @@ body {
 }
 
 /* Classes for contactme */
-
 .container {
   position: relative;
 }
