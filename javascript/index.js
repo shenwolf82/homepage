@@ -1,31 +1,32 @@
 
-function styleChange(){
-  document.getElementById("education-table").classList.toggle("education-background");
-}
+// index page code
+
 $(".topsection").fadeIn(2000, "linear");
 
-// var educationDown = 139;
-// var educationUp = 140;
-
-// calls fading function to make sections slide up and down, requires function to be called in anonymous function to work with scrolling
-// $(document).on("scroll",function(){
-//   sliding("#education", educationDown, educationUp);
-// });
-//
-// function sliding(slideId, downValue, upValue)
-// {
-//   //if statements check distance scrolled from top vs variable values to trigger slides
-// if($(document).scrollTop() < downValue){
-//   $(slideId).slideDown();
-// }
-// else if($(document).scrollTop() > upValue){
-//   $(slideId).slideUp();
-// }}
-$("#education-button").on("click", function(){
-  console.log("Clicked!");
-  $("#education").slideToggle();
+$(".section-expand").hover(function(){
+  console.log("hovered on title-section");
+  $(this).toggleClass("titleHover");
 });
-$("#work-button").on("click", function(){
-  console.log("Clicked!");
-  $("#work").slideToggle();
+
+$(".section-title").click(function(){
+  $(this).siblings(".slideIt").slideToggle();
+});
+
+// aboutme page code
+
+$(".aboutPictures").hover(function(){
+  $(this).animate({opacity: '1', borderRadius: '0%'}, 800);},
+  function() {
+  $(this).animate({opacity: '0.55', borderRadius: '100%'}, 800);
+});
+
+
+
+// testPage code
+
+$("#testTitle").fadeOut().fadeIn().fadeOut().fadeIn(2000);
+
+$("#testTitle").hover(function(){
+  console.log("hovered");
+  $("#testTitle").toggleClass("titleHover");
 });

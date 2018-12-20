@@ -7,29 +7,33 @@ body {
   background-color: black;
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
-  line-height: 25px;
+  line-height: 1.7em;
+  font-size: 18px;
 }
 
 /* This makes button appear as plain text */
-button{
+button {
   border: none;
   background-color: inherit;
   color: inherit;
   font-family: 'Source Sans Pro', sans-serif;
 }
+
 /* This disables button border when button is clicked */
-button:focus{
+button:focus {
   outline: none;
 }
 
 .navlinks {
+  font-size: 16px;
   padding-right: 25px;
 }
 
 /* Classes for index page */
-.hideThis{
+.hideThis {
   display: none;
 }
+
 .topsection {
   background-image: url("../images/ocean.jpg");
   background-size: 100% 600px;
@@ -37,6 +41,10 @@ button:focus{
   top: 1px;
   text-align: center;
   height: 450px;
+}
+
+.titleHover {
+  color: purple;
 }
 
 .head {
@@ -58,11 +66,6 @@ button:focus{
   top: 150px;
 }
 
-/* .education-background {
-  background-image: url("../images/devry.png");
-  color: black;
-} */
-
 .section-title {
   text-align: center;
   margin-top: 25px;
@@ -79,8 +82,35 @@ button:focus{
   text-align: center;
 }
 
-/* Classes for contactme */
+/* Classes for aboutMe */
+.aboutmePage{
+  background-image: url("../images/ocean.jpg");
+  background-repeat: no-repeat;
 
+}
+.aboutPictures{
+  opacity: 0.55;
+  border-radius: 100%;
+}
+
+.myPicture{
+  float: left;
+  margin-top: -75px;
+  padding-right: 40px;
+}
+
+.withGuitar{
+  float: right;
+  padding-left: 40px;
+}
+
+.aboutText{
+  margin-right: 200px;
+  margin-left: 35px;
+}
+
+
+/* Classes for contactme */
 .container {
   position: relative;
 }
@@ -127,4 +157,9 @@ button:focus{
 .labelname {
   position: absolute;
   bottom: 28px;
+}
+
+/* testPage CSS */
+.block1 {
+  margin: auto 100px auto 100px;
 }
